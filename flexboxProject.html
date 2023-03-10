@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Project</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .flex-div {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .bg-red {
+            background-color: #F55353;
+        }
+
+        .bg-dark {
+            background-color: #143F6B;
+        }
+
+        .bg-orange {
+            background-color: #FEB139;
+        }
+
+        .text-dark {
+            color: #143F6B;
+        }
+
+        .text-orange {
+            color: #FEB139;
+        }
+
+        .w-75 {
+            width: 75%;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .align-item-center {
+            align-items: center;
+        }
+
+        .title-div {
+
+            height: max-content;
+            align-self: center;
+        }
+
+        .img {
+            border-radius: 10px;
+        }
+
+        .container-1 {
+            height: 100vh;
+
+        }
+
+        .container-2 {
+            width: 80%;
+            height: 50vh;
+            margin: auto;
+            justify-content: space-between;
+
+        }
+
+        .container-3 {
+            width: 80%;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .container-4 {
+            flex-direction: row-reverse;
+            width: 80%;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .container-5 {
+            flex-direction: column;
+            width: 80%;
+            margin: 0px auto;
+            text-align: center;
+            align-items: center;
+        }
+
+        .three-4-container {
+            height: 100vh;
+            /* background-color: #143F6B; */
+
+        }
+
+        .text-center {
+            text-align: center;
+            width: 30%;
+            margin: 0px 10px;
+        }
+
+        .card-text {
+            padding: 0px 30px;
+        }
+
+        .image {
+            width: 35%;
+            border-radius: 5px;
+
+
+        }
+
+        .image-2 {
+            width: 20%;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .banner {
+            margin: auto;
+        }
+
+        .banner-2 {
+            text-align: right;
+        }
+
+        .small-container {
+
+            width: 30%;
+            margin-bottom: 100px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .flex-div {
+                height: 50vh;
+            }
+
+            .container-2 {
+                justify-content: space-around;
+            }
+
+            .text-center {
+                width: 100%;
+            }
+
+            .container-3,
+            .container-4 {
+                align-items: center;
+                height: auto;
+
+            }
+
+            .banner {
+                text-align: center;
+                margin-top: 0;
+            }
+
+            .three-4-container {
+                height: auto;
+            }
+
+            .container-5 {
+                margin-top: 30px;
+            }
+
+            .small-container {
+                width: 100%;
+            }
+            .image-2{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container container-1">
+        <div class="flex-div bg-dark container">
+            <div class="title-div  w-75 ">
+                <h1 class="text-orange">FlexBox Project</h1>
+                <p class="text-orange">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium enim sit
+                    excepturi cupiditate tempora sed optio quae facere ducimus? Maiores eos ex modi veritatis doloribus
+                    nisi placeat reprehenderit repudiandae beatae.</p>
+            </div>
+
+        </div>
+        <div class="flex-div bg-red container justify-content-center align-item-center">
+            <img class="w-50 img" src="coolSkykid.jpg" alt="slykidimg">
+        </div>
+    </div>
+    <div class="container container-2 align-item-center ">
+        <div class="card text-center">
+            <h3>Card-1</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur aolores blanditiis dolor maiores aliquam
+                inventore! Eum, reprehenderit maxime!</p>
+        </div>
+        <div class="card text-center">
+            <h3>Card-2</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet conseclores blanditiis dolor maiores aliquam inventore! Eum,
+                reprehenderit maxime!</p>
+
+        </div>
+        <div class="card text-center">
+            <h3>Card-3</h3>
+            <p class="card-text">Lorem ipsum Rem sequi inventore dolres blanditiis dolor maiores aliquam inventore! Eum,
+                reprehenderit maxime!</p>
+
+        </div>
+    </div>
+    <div class="three-4-container">
+        <div class="container container-3">
+
+            <img src="picture.jpg" class="image" alt="cartoon pic">
+
+            <div class="banner">
+                <h1>Picture</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam tempore minima illum error dolor
+                    in sequi animi esse provident qui, numquam repellat! Ad architecto ab dignissimos illum amet
+                    perferendis?</p>
+            </div>
+        </div>
+
+        <div class="container container-4">
+
+            <img src="picture.jpg" class="image" alt="cartoon pic">
+
+            <div class="banner banner-2">
+                <h1>Picture</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam tempore minima illum error dolor
+                    in sequi animi esse provident qui, numquam repellat! Ad architecto ab dignissimos illum amet
+                    perferendis?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-5">
+        <img src="profile.jpg" class="image-2" alt="whitebeard">
+        <div class="small-container">
+            <h1>Welcome!</h1>
+            <p>Lorem ipsum dolor sit corporis aliquam. Illo similique nulla earum nostrum voluptatum libero quod quia
+                totam nesciunt porro? Veniam, dicta!</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
